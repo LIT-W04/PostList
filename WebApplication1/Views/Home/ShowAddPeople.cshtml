@@ -1,0 +1,32 @@
+﻿<form method="post" action="/home/submitpeople">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="people[0].firstName" class="form-control" placeholder="First Name"/>
+            </td>
+            <td>
+                <input type="text" name="people[0].lastName" class="form-control" placeholder="Last Name" />
+            </td>
+            <td>
+                <input type="text" name="people[0].age" class="form-control" placeholder="Age" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="people[1].firstName" class="form-control" placeholder="First Name" />
+            </td>
+            <td>
+                <input type="text" name="people[1].lastName" class="form-control" placeholder="Last Name" />
+            </td>
+            <td>
+                <input type="text" name="people[1].age" class="form-control" placeholder="Age" />
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-primary">Submit</button>
+</form>

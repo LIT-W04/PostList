@@ -1,0 +1,34 @@
+﻿
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <form method="post">
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <th>Flavor</th>
+                    <th>Price</th>
+                    <th>With Cone?</th>
+                </tr>
+                <tr id="template">
+                    <td>
+                        <input type="text" name="icecreams[0].flavor" placeholder="Flavor" class="form-control" />
+                    </td>
+                    <td>
+                        <input type="text" name="icecreams[0].price" placeholder="Price" class="form-control" />
+                    </td>
+                    <td>
+                        <input type="checkbox" value="true" name="icecreams[0].iswithcone" class="form-control" />
+                        <input type="hidden" value="false" name="icecreams[0].iswithcone" />
+                    </td>
+                </tr>
+            </table>
+            <button type="button" id="add-row" class="btn btn-success">Add Row</button>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="/Scripts/icecream.js"></script>
+}
